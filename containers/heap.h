@@ -28,6 +28,8 @@ template<typename Trait>
 class Heap {
 public:
     using value_type = typename Trait::value_type;
+    using insert_key_type = value_type;
+    using insert_value_type = Ref;
     using Node       = typename Trait::Node;
     using Comp       = typename Trait::Comp;
     using MySelf     = Heap<Trait>;

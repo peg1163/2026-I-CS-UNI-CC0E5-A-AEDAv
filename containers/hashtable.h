@@ -191,6 +191,8 @@ class HashTable {
 public:
     using key_type = typename Trait::key_type;
     using mapped_type = typename Trait::mapped_type;
+    using insert_key_type = key_type;
+    using insert_value_type = mapped_type;
     using Hash = hash<key_type>;
     using Bucket = HashBucket<Trait>;
     using Entry = typename Bucket::Entry;
